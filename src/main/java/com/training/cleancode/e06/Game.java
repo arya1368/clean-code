@@ -31,12 +31,12 @@ public class Game {
         return score;
     }
 
-    private int calculateBonusOfStrike(int firstBallInFrame) {
-        return rolls[firstBallInFrame + 1] + rolls[firstBallInFrame + 2];
-    }
-
     private boolean isStrike(int firstBallInFrame) {
         return rolls[firstBallInFrame] == 10;
+    }
+
+    private int calculateBonusOfStrike(int firstBallInFrame) {
+        return rolls[firstBallInFrame + 1] + rolls[firstBallInFrame + 2];
     }
 
     private boolean isSpare(int firstBallInFrame) {
